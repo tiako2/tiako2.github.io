@@ -36,21 +36,6 @@ const App = () => {
     data: []
   });
 
-  // compteur de visites
-  useEffect(() => {
-    fetch("https://api.counterapi.dev/v1/first-counter-3196/up", {
-      method: "POST",
-      headers: {
-        "Authorization": "ut_K4oKN8crbQ49YFxgc9ab4eNXUxAkIkDSgpoTxnFV"
-      }
-    })
-      .then(res => res.json())
-      .then(data => {
-        setVisites(data.Count);
-        console.log("Visites :", data.Count);
-      });
-  }, []);
-
   // --- Ajouter cette fonction dans ton composant App ---
   const getRendementProbabilite = (taux) => {
     if (taux === 0) return { label: 'Neutre', color: 'text-gray-400' };
