@@ -16,14 +16,14 @@ import {
 const App = () => {
   // --- State Initialisé avec les valeurs du CSV ---
   const [inputs, setInputs] = useState({
-    salaireBrutInitial: 1800,
+    salaireBrutInitial: 2000,
     anneesCotisation: 43,
     esperanceVieRetraite: 25,
-    tauxEvolutionSalaire: 1, // en %
+    tauxEvolutionSalaire: 2, // en %
     rendementAnnuel: 5, // en %
     tauxCotisationTotal: 28, // en %
-    tauxNet: 73.3, // Approximation net/brut du CSV
-    tauxDividende: 0 // % du capital versé en dividendes chaque année
+    tauxNet: 0, // Approximation net/brut du CSV
+    tauxDividende: 2 // % du capital versé en dividendes chaque année
   });
 
   const [results, setResults] = useState({
